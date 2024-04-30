@@ -15,7 +15,11 @@
         android:id="@+id/nav_gallery"
         android:name="com.example.restaurant_poli.ui.menu.MenuFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_menu" />
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
@@ -27,5 +31,4 @@
         android:name="com.example.restaurant_poli.ui.contacto.contactoFragment"
         android:label="@string/menu_contacto"
         tools:layout="@layout/fragment_contacto" />
-
 </navigation>

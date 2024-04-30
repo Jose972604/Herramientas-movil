@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,7 +27,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView"
+
                 android:layout_width="47dp"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/nav_header_desc"
@@ -73,6 +78,7 @@
                     app:cardCornerRadius="5dp">
 
                     <ImageView
+                        android:id="@+id/imageView"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
@@ -251,6 +257,7 @@
                     app:cardCornerRadius="5dp">
 
                     <ImageView
+
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
@@ -417,3 +424,4 @@
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

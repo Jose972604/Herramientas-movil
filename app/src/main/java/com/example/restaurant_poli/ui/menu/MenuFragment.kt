@@ -4,9 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.restaurant_poli.R
 import com.example.restaurant_poli.databinding.FragmentMenuBinding
+import androidx.navigation.fragment.NavHostFragment
 
 class MenuFragment : Fragment() {
 
@@ -37,5 +41,19 @@ class MenuFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Obtén una referencia al ImageView
+        val imageView = view.findViewById<ImageView>(R.id.imageView)
+
+        imageView.setOnClickListener {
+            // Obtén el NavController de NavHostFragment
+            val navController = findNavController()
+            // Navega a ProductDetailFragment
+            navController.navigate(R.id.action_nav_gallery_to_nav_home)
+        }
     }
 }
