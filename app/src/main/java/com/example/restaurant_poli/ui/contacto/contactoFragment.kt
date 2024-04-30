@@ -7,12 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.example.restaurant_poli.R
-import com.example.restaurant_poli.databinding.FragmentProductDetailBinding
+import com.example.restaurant_poli.databinding.ActivityContactoBinding
 import com.example.restaurant_poli.ui.productDetail.ProductDetailViewModel
 
 class contactoFragment : Fragment() {
 
-    private var _binding: FragmentProductDetailBinding? = null
+    private var _binding: ActivityContactoBinding? = null
 
 
     private val binding get() = _binding!!
@@ -23,10 +23,10 @@ class contactoFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val productDetailViewModel =  ViewModelProvider(this).get(ProductDetailViewModel::class.java)
+        //val productDetailViewModel =  ViewModelProvider(this).get(ProductDetailViewModel::class.java)
         // Inflate the layout for this fragment
 
-        _binding = FragmentProductDetailBinding.inflate(inflater, container, false)
+        _binding = ActivityContactoBinding.inflate(inflater, container, false)
         val root: View = binding.root
         return root
     }
