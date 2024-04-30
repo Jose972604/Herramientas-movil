@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.contacto.contactoActivity">
+
+    <LinearLayout
+        android:id="@+id/contenedorImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="228dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bloque_1" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:id="@+id/cardIcon"
+        android:layout_marginTop="-60dp"
+        app:cardCornerRadius="60dp"
+        app:cardBackgroundColor="@color/redwood"
+        app:layout_constraintTop_toBottomOf="@id/contenedorImagen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.3"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="600dp"
+                android:src="@drawable/fasfood"
+                app:tint="@color/white"
+                >
+
+            </ImageView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/nombreEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@+id/cardIcon"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gourmet App:"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eperiencias Gourmet"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@+id/nombreEmpresa"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Direccion :"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Calle 15 # 17-25 Bogotá D.C - Colombia "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:layout_marginStart="2dp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@+id/direccion"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Telefono :"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+ 57 310 320 33 44"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:layout_marginStart="3dp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@+id/telefono"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+ 57 310 320 33 44"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:layout_marginStart="3dp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/links"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+
+        app:layout_constraintTop_toBottomOf="@+id/email"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Links :"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="50dp"
+            >
+
+            <TextView
+                android:id="@+id/openWeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="gourmetapp.com"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="navigateWeb"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_weight="1">
+
+            </TextView>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instagram"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_weight="1">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TikTok"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_weight="1">
+
+            </TextView>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+
+        app:layout_constraintTop_toBottomOf="@+id/links"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bio :"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet. Ad inventore veniam et quia fuga aut"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            android:layout_marginStart="3dp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
